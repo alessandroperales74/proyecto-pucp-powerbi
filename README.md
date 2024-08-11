@@ -78,11 +78,54 @@ Tomando la data cargada en SQL Server, se plantearon 10 preguntas que deben ser 
 
 ## Creación de Tablas SQL
 
-La ingesta de la data necesaria para este análisis se realizó en SQL Server. 
+La creación de la base de datos necesaria para este análisis se realizó en SQL Server. Asimismo, para poder resolver este caso de negocio se crearion las siguientes tablas:
 
-El diagrama de base de datos utilizado para este proyecto es el sigiuiente:
+- CLIENTES
+- PLAN_TARIFARIO
+- CAMPAÑA
+- LINEAS_NUEVAS
+- VENTAS_GENERALES
+- METAS_GENERAL
+- TIPO_CANAL
+
+
+```sql
+-- Creación de tablas requeridas para el Proyecto
+CREATE TABLE grupo05.CLIENTES (
+  Cliente_Id int PRIMARY KEY NOT NULL,
+  Nombres varchar(255),
+  Apellidos varchar(255),
+  Genero varchar(1),
+  DNI varchar(8),
+  Fecha_nacimiento date
+)
+GO
+
+CREATE TABLE grupo05.PLAN_TARIFARIO (
+  Plan_Id int PRIMARY KEY NOT NULL,
+  Nombre_Plan varchar(255),
+  Precio_Plan decimal(10,2),
+  GB_Disponibles int,
+  Minutos_Disponibles int,
+  SMS_Disponibles int
+)
+GO
+```
+
+![ImageBBDD1](images/creacion_sql.jpg)
+
+A continuación se indica el modelo de base de datos utilizado para este proyecto es el sigiuiente:
 
 ![ImageBBDD](images/diagrama_bbdd.jpg)
 
-En código para la creación está en el siguiente enlace: ![Código SQL](sql/codigo_sql_entel.sql)
+La inserción de los datos se realizó utilizando el INSERT INTO VALUES de la siguiente manera 
+
+![ImageBBDD2](images/insercion_sql.jpg)
+![ImageBBDD3](images/insercion_sql1.jpg)
+![ImageBBDD4](images/insercion_sql2.jpg)
+![ImageBBDD5](images/insercion_sql3.jpg)
+
+Para mayor detalle, el código completo con la creación de las tablas SQL se encuentra en el siguiente enlace: ![Código SQL](sql/codigo_sql_entel.sql)
+
+
 
