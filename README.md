@@ -1,5 +1,5 @@
 
-# Proyecto Final
+# Proyecto Final - Data Visualization for Power BI
 
 Este es un proyecto grupal del curso de Data Visualization for Power BI correspondiente al Diplomado en Business Analytics de la Pontificia Universidad Católica del Perú.
 
