@@ -34,6 +34,8 @@ En esta pestaña buscamos brindar un estatus de cómo está nuestro promedio men
 
 ### Preguntas 
 
+Tomando la data cargada en SQL Server, se plantearon 10 preguntas que deben ser respondidas utilizando las técnicas de visualización de datos. El objetivo de estas visualizaciones es poder facilitar la toma de decisiones de Entel para la implementación de nuestra estrategia.
+
 - **Pregunta 1**: **¿Qué tendencia presentó el indicador de cumplimiento mensual en el año 2023?**
 
 ![ImageP1](images/Pregunta1.jpg)
